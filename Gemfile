@@ -1,4 +1,8 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source "https://gems.ruby-china.com"
 gem 'github-pages', group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'faraday','>=2.0' if Gem.win_platform?
+
+gem "webrick", "~> 1.8"
